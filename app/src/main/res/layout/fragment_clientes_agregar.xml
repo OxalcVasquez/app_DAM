@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClientesAgregarFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_cliente"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Apellidos y nombres"
+                    app:endIconMode="clear_text"
+                    app:startIconDrawable="@drawable/ic_cliente_apellidos">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_cliente_apellidos_nombres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tilDireccion"
+                    android:hint="Direccion"
+                    app:endIconMode="custom"
+                    app:endIconDrawable="@drawable/ic_cliente_direccion_pin"
+                    app:startIconDrawable="@drawable/ic_cliente_direccion">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_cliente_direccion"
+                        android:layout_width="match_parent"
+                        android:inputType="textPostalAddress"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Space android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Telefono"
+                    app:endIconMode="clear_text"
+                    app:startIconDrawable="@drawable/ic_cliente_telefono">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_cliente_telefono"
+                        android:layout_width="match_parent"
+                        android:inputType="phone"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Space android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Linea de credito"
+                    app:endIconMode="clear_text"
+                    app:startIconDrawable="@drawable/ic_cliente_tarjeta_credito">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_cliente_linea_credito"
+                        android:layout_width="match_parent"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Space android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contrasena para ingresar al sitio web"
+                    app:endIconMode="password_toggle"
+                    app:startIconDrawable="@drawable/ic_cliente_clave">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_cliente_contrasena"
+                        android:layout_width="match_parent"
+                        android:inputType="textPassword"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Space android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ciudad"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    >
+                    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/actv_cliente_ciudad"
+                        android:imeOptions="actionSearch"
+                        android:inputType="textAutoComplete"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Space android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/sw_cliente_vip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cliente Vip"/>
+
+                <Space android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Registrar"
+                        android:id="@+id/btn_cliente_registrar"
+                        style="@style/Widget.MaterialComponents.Button"
+                        app:icon="@drawable/ic_cliente_registrar"/>
+
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"/>
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Limpiar"
+                        android:id="@+id/btn_cliente_limpiar"
+                        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                        app:icon="@drawable/ic_limpiar"/>
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"/>
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mapa"
+                        android:id="@+id/btn_cliente_mapa"
+                        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                        app:icon="@drawable/ic_cliente_direccion_pin"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>

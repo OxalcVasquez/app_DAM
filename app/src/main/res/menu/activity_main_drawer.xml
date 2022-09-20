@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_clientes"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_clientes" />
+
+        <item
+            android:id="@+id/nav_catalogo"
+            android:icon="@drawable/ic_products"
+            android:title="@string/menu_productos" />
+
+        <item
+            android:id="@+id/nav_ofertas"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Ofertas del mes" />
+
+        <item
+            android:id="@+id/nav_ventas"
+            android:icon="@drawable/ic_ventas2"
+            android:title="Ventas" />
+
+        <item
+            android:id="@+id/nav_compras"
+            android:icon="@drawable/ic_ventas"
+            android:title="Compras" />
+    </group>
+
+    <item android:title="Communicate">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="Share" />
+                <item
+                    android:id="@+id/nav_send"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Send" />
+            </group>
+
+        </menu>
+    </item>
+
+</menu>

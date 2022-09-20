@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">App NavigationDrawerActivity</string>
+    <string name="title_activity_main_menu">MainMenuActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_clientes">Clientes</string>
+    <string name="menu_productos">Productos</string>
+
+
+    <!--    Menu cliente string-->
+    <string name="clientes_opcion_agregar">Agregar</string>
+    <string name="clientes_opcion_listado">Listado</string>
+    <string name="clientes_opcion_ventas">Ventas</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

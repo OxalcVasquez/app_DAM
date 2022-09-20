@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/opcionAgregar" android:enabled="true" android:icon="@drawable/ic_agregar_cliente" android:title="@string/clientes_opcion_agregar"/>
+    <item android:id="@+id/opcionListado" android:enabled="true" android:icon="@drawable/ic_listado_cliente" android:title="@string/clientes_opcion_listado"/>
+    <item android:id="@+id/opcionVentas" android:enabled="true" android:icon="@drawable/ic_ventas_cliente" android:title="@string/clientes_opcion_ventas"/>
+</menu>
